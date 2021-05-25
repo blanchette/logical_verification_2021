@@ -1,0 +1,8 @@
+[package]
+name = "logical-verification"
+version = "2.0"
+lean_version = "leanprover-community/lean:3.30.0"
+path = "."
+
+[dependencies]
+mathlib = {git = "https://github.com/leanprover-community/mathlib", rev = "48104c3a22ae4b35d92b8ad30831eb1591049958"}
