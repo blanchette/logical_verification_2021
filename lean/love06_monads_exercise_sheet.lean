@@ -102,8 +102,8 @@ internal state of type `σ` that can fail (unlike `action σ`).
 
 We start with defining `faction σ α`, where `σ` is the type of the internal
 state, and `α` is the type of the value stored in the monad. We use `option` to
-model failure. This means we can also use the monadic behavior of `option` when
-defining the monadic operations on `faction`.
+model failure. This means we can also use the monad operations of `option` when
+defining the monad operations on `faction`.
 
 Hints:
 
@@ -139,8 +139,8 @@ lemma faction.bind_apply {σ α β : Type} (f : faction σ α) (g : α → facti
   (f >>= g) s = (f s >>= (λas, g (prod.fst as) (prod.snd as))) :=
 by refl
 
-/-! 1.4. Define the monadic operator `pure` for `faction`, in such a way that it
-will satisfy the monad laws. -/
+/-! 1.4. Define the operator `pure` for `faction`, in such a way that it will
+satisfy the three laws. -/
 
 def faction.pure {σ α : Type} (a : α) : faction σ α :=
 sorry
@@ -183,7 +183,7 @@ Hints:
 /-! ## Question 2: Kleisli Operator
 
 The Kleisli operator `>=>` (not to be confused with `>>=`) is useful for
-pipelining monadic operations. Note that `λa, f a >>= g` is to be parsed as
+pipelining effectful functions. Note that `λa, f a >>= g` is to be parsed as
 `λa, (f a >>= g)`, not as `(λa, f a) >>= g`. -/
 
 def kleisli {m : Type → Type} [lawful_monad m] {α β γ : Type} (f : α → m β)

@@ -168,8 +168,8 @@ Monads have several benefits, including:
   `mmap {α β : Type} : (α → m β) → list α → m (list β)`, which work uniformly
   across all monads.
 
-The `bind` and `pure` operations are normally required to obey three laws,
-called the monad laws. Pure data as the first program can be simplified away:
+The `bind` and `pure` operations are normally required to obey three laws. Pure
+data as the first program can be simplified away:
 
     do
       a' ← pure a,
@@ -227,13 +227,11 @@ type—or here, by a type constructor `m : Type → Type`. -/
   operations on `m` and some syntactic sugar.
 
 * The definition adds three fields to those already provided by `has_bind` and
-  `has_pure`, to store the proofs of the monad laws.
+  `has_pure`, to store the proofs of the laws.
 
 To instantiate this definition with a concrete monad, we must supply the type
-constructor `m` (e.g., `option`), `bind` and `pure` operators, and
-proofs of the monad laws.
-
-(Lean's actual definition of monads is more complicated.)
+constructor `m` (e.g., `option`), `bind` and `pure` operators, and proofs of the
+laws.
 
 
 ## No Effects

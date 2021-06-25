@@ -3,7 +3,7 @@ import .love05_inductive_predicates_demo
 
 /-! # LoVe Demo 7: Metaprogramming
 
-Users can extend Lean with custom monadic tactics and tools. This kind of
+Users can extend Lean with custom tactics and tools. This kind of
 programming—programming the prover—is called metaprogramming.
 
 Lean's metaprogramming framework uses mostly the same notions and syntax as
