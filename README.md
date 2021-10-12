@@ -1,7 +1,7 @@
 # Logical Verification 2021: Installation Instructions
 
 We have installation instructions for Windows, Linux, and macOS.<!-- As a backup
-plan, we provide a virtual machine on which Lean is already installed.->
+plan, we provide a virtual machine on which Lean is already installed.-->
 
 These directions are adapted from the
 [leanprover-community](https://leanprover-community.github.io/get_started.html#regular-install)
