@@ -200,7 +200,7 @@ Debian/Ubunutu above.
 
 </details>
 
-<details><summary>macOS</summary>
+<details><summary>macOS (Intel Macs)</summary>
 
 
 ## macOS (Intel Macs)
@@ -251,6 +251,8 @@ not including the Logical Verification repository details.
 
 </details>
 
+<details><summary>macOS (M1 Macs / Apple Silicon)</summary>
+
 ## macOS (M1 Macs / Apple Silicon)
 
 Lean is not yet supported on M1 Macs. Specifically, `elan` – which is otherwise recommended (and installed) as part of the above instructions – will not be able to fetch Lean binaries on these devices.
@@ -290,6 +292,8 @@ In the meantime, you can try to set up an Intel installation using Rosetta:
 
 There is a [Zulip thread](https://leanprover-community.github.io/archive/stream/113489-new-members/topic/M1.20macs.html)
 with some interim further details and advice. If you have trouble, feel free to ask the TAs for help.
+
+</details>
 
 <!--
 
