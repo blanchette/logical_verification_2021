@@ -259,7 +259,7 @@ Lean is not yet supported on M1 Macs. Specifically, `elan` – which is otherwis
 
 In the meantime, you can try to set up an Intel installation using Rosetta:
 
- * Install an Intel version of homebrew.
+ * [Install an Intel version of homebrew](https://stackoverflow.com/questions/64882584/how-to-run-the-homebrew-installer-under-rosetta-2-on-m1-macbook).
 
  * Follow [the detailed Lean installation instructions](https://leanprover-community.github.io/install/macos_details.html), ensuring you use the Intel version of homebrew.
 
