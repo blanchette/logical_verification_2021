@@ -1,4 +1,4 @@
-# Logical Verification 2020: Installation Instructions
+# Logical Verification 2021: Installation Instructions
 
 We have installation instructions for Windows, Linux, and macOS.<!-- As a backup
 plan, we provide a virtual machine on which Lean is already installed.->
