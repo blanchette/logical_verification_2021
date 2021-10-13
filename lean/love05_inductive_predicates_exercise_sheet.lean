@@ -3,6 +3,7 @@ import .love05_inductive_predicates_demo
 
 /-! # LoVe Exercise 5: Inductive Predicates -/
 
+
 set_option pp.beta true
 set_option pp.generalized_field_notation false
 
