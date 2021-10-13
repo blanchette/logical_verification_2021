@@ -100,18 +100,20 @@ inductive score : Type
 infixr ` – ` : 10 := score.vs
 
 inductive step : score → score → Prop
-| srv_0_15    : ∀n, step (0–n) (15–n)
-| srv_15_30   : ∀n, step (15–n) (30–n)
-| srv_30_40   : ∀n, step (30–n) (40–n)
-| srv_40_game : ∀n, n < 40 → step (40–n) score.game_srv
-| srv_40_adv  : step (40–40) score.adv_srv
-| srv_adv_40  : step score.adv_srv (40–40)
-| rcv_0_15    : ∀n, step (n–0) (n–15)
-| rcv_15_30   : ∀n, step (n–15) (n–30)
-| rcv_30_40   : ∀n, step (n–30) (n–40)
-| rcv_40_game : ∀n, n < 40 → step (n–40) score.game_rcv
-| rcv_40_adv  : step (40–40) score.adv_rcv
-| rcv_adv_40  : step score.adv_rcv (40–40)
+| srv_0_15     : ∀n, step (0–n) (15–n)
+| srv_15_30    : ∀n, step (15–n) (30–n)
+| srv_30_40    : ∀n, step (30–n) (40–n)
+| srv_40_game  : ∀n, n < 40 → step (40–n) score.game_srv
+| srv_40_adv   : step (40–40) score.adv_srv
+| srv_adv_40   : step score.adv_srv (40–40)
+| srv_adv_game : step score.adv_srv (40–40)
+| rcv_0_15     : ∀n, step (n–0) (n–15)
+| rcv_15_30    : ∀n, step (n–15) (n–30)
+| rcv_30_40    : ∀n, step (n–30) (n–40)
+| rcv_40_game  : ∀n, n < 40 → step (n–40) score.game_rcv
+| rcv_40_adv   : step (40–40) score.adv_rcv
+| rcv_adv_40   : step score.adv_rcv (40–40)
+| rcv_adv_game : step score.adv_rcv score.game_rcv
 
 infixr ` ⇒ ` := step
 
