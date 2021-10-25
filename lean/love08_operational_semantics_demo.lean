@@ -722,7 +722,7 @@ def stmt.W : stmt → set string
 | (stmt.while _ S)  := stmt.W S
 
 def exp.R {α : Type} : (state → α) → set string
-| f := {x | ∀s n, f (s{x ↦ n}) ≠ f s}
+| f := {x | ∃s n, f (s{x ↦ n}) ≠ f s}
 
 def stmt.R : stmt → set string
 | stmt.skip         := ∅
