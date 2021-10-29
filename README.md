@@ -1,7 +1,7 @@
 # Logical Verification 2021: Installation Instructions
 
-We have installation instructions for Windows, Linux, and macOS.<!-- As a backup
-plan, we provide a virtual machine on which Lean is already installed.-->
+We have installation instructions for Windows, Linux, and macOS. As a backup
+plan, we provide a virtual machine on which Lean is already installed.
 
 These directions are adapted from the
 [leanprover-community](https://leanprover-community.github.io/get_started.html#regular-install)
@@ -295,8 +295,6 @@ with some interim further details and advice. If you have trouble, feel free to 
 
 </details>
 
-<!--
-
 <details><summary>Virtual Machine (for Any Operating System)</summary>
 
 ## Virtual Machine
@@ -304,26 +302,27 @@ with some interim further details and advice. If you have trouble, feel free to 
 * Download and install [VirtualBox](https://www.virtualbox.org/).
   (Other virtualization software should also work.)
 
-* Download the virtual machine, `logical_verification_2020.ova` (2.8G), from
-  [Google Drive](https://drive.google.com/file/d/1oqV8ckyUN_jwLTOOB-DfYn4p2E-xwFs1/view?usp=sharing).
+* Download the virtual machine, `logical_verification_2021.ova` (3.3G), from
+  [Google Drive](https://drive.google.com/file/d/1wFt7b0REC_8qqnO3CdOExi6iG6HIXZLQ/view).
 
   SHA256:
   ```
-  055d8a81ba1b48c9ae30b05c0a736f7aacc0b1a37133c8c681be47e040a50be6  logical_verification_2020.ova
+  c0d002a3bdb4b37ec9e69f6accc2e80846e70253a3e3abe7731436b85b93a854  logical_verification_2021.ova
   ```
 
 * Open VirtualBox.
 
 * Import the downloaded file via `File > Import Appliance`. This requires around
-  6GB of disk space. The virtual machine is configured to use 4 processor cores
-  and up to 5GB of RAM. It uses around 4GB of RAM if you open all the Lean files
+  7GB of disk space.
+
+* Start the virtual machine by selecting `logical_verification_2021` and
+  clicking the `Start` button. The virtual machine is configured to use 4
+  processor cores and up to 5GB of RAM. (You can edit the virtual machine to
+  change these values.) It uses around 4GB of RAM if you open all the Lean files
   in VSCode.
 
-* Start the virtual machine by selecting `logical_verification_2020` and
-  clicking the `Start` button.
-
 * Open VSCode by clicking on the blue ribbon icon on the desktop. VSCode should
-  automatically open the folder `~/logical_verification_2020`. In the file
+  automatically open the folder `~/logical_verification_2021`. In the file
   explorer on the left-hand side, you will find all exercises and homework in
   the `lean` folder, as we upload them.
 
@@ -334,5 +333,3 @@ with some interim further details and advice. If you have trouble, feel free to 
   `love`.
 
 </details>
-
--->
