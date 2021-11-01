@@ -44,8 +44,8 @@ Research) since 2012.
 Its mathematical library, `mathlib`, is developed under the leadership of
 Jeremy Avigad (Carnegie Mellon University).
 
-We use community version 3.20.0. We use its basic libraries, `mathlib`, and
-`LoVelib`. Lean is a research project.
+We use the community version of Lean 3. We use its basic libraries, `mathlib`,
+and `LoVelib`. Lean is a research project.
 
 Strengths:
 
@@ -63,17 +63,17 @@ Strengths:
 
 ### Web Site
 
-    https://lean-forward.github.io/logical-verification/2020/index.html
+    https://lean-forward.github.io/logical-verification/2021/index.html
 
 
 ### Installation Instructions
 
-    https://github.com/blanchette/logical_verification_2020/blob/master/README.md#logical-verification-2020---installation-instructions
+    https://github.com/blanchette/logical_verification_2021/blob/main/README.md#logical-verification-2021---installation-instructions
 
 
 ### Repository (Demos, Exercises, Homework)
 
-    https://github.com/blanchette/logical_verification_2020
+    https://github.com/blanchette/logical_verification_2021
 
 The file you are currently looking at is a demo. There are
 
@@ -89,8 +89,8 @@ on the exercises, which build on the demos.
 
 ### The Hitchhiker's Guide to Logical Verification
 
-    https://github.com/blanchette/logical_verification_2020/blob/master/hitchhikers_guide.pdf
-    https://github.com/blanchette/logical_verification_2020/blob/master/hitchhikers_guide_tablet.pdf
+    https://github.com/blanchette/logical_verification_2021/blob/main/hitchhikers_guide.pdf
+    https://github.com/blanchette/logical_verification_2021/blob/main/hitchhikers_guide_tablet.pdf
 
 The lecture notes consist of a preface and 13 chapters. They cover the same
 material as the corresponding lectures but with more details. Sometimes there
