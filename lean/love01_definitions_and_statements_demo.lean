@@ -226,7 +226,7 @@ Typing rules:
     —————————— Cst   if c is declared with type σ
     C ⊢ c : σ
 
-    —————————— Var   if x : σ occurs in C
+    —————————— Var   if x : σ is the last occurrence of x in C
     C ⊢ x : σ
 
     C ⊢ t : σ → τ    C ⊢ u : σ
