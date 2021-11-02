@@ -24,16 +24,16 @@ A selection of proof assistants, classified by logical foundations:
 Mathematics:
 
 * the four-color theorem (in Coq);
-* the odd-order theorem (in Coq);
-* the Kepler conjecture (in HOL Light and Isabelle/HOL).
+* the Kepler conjecture (in HOL Light and Isabelle/HOL);
+* the definition of perfectoid spaces (in Lean).
 
 Computer science:
 
-* hardware
-* operating systems
-* programming language theory
-* compilers
-* security
+* hardware;
+* operating systems;
+* programming language theory;
+* compilers;
+* security.
 
 
 ## Lean
@@ -101,7 +101,7 @@ notes will be necessary.
 ### Final Exam
 
 The course aims at teaching concepts, not syntax. Therefore, the final exam is
-on paper.
+on paper. It is also closed book.
 
 
 ## Our Goal
@@ -147,7 +147,7 @@ chapters of the online tutorial __Learn You a Haskell for Great Good!__:
 
     http://learnyouahaskell.com/chapters
 
-Make sure to at least reach the section titled "Lambdas".
+Make sure to at least reach, and read, the section titled "Lambdas".
 
 
 ## Types and Terms
@@ -216,8 +216,8 @@ constants trool.true trool.false trool.maybe : trool
 
 /-! ### Type Checking and Type Inference
 
-Type checking and type inference are decidable problems, but this property is
-quickly lost if features such as overloading or subtyping are added.
+Type checking and type inference are decidable problems (although this property is
+quickly lost if features such as overloading or subtyping are added).
 
 Type judgment: `C ⊢ t : σ`, meaning `t` has type `σ` in local context `C`.
 
@@ -241,7 +241,7 @@ Typing rules:
 ### Type Inhabitation
 
 Given a type `σ`, the __type inhabitation__ problem consists of finding a term
-of that type.
+of that type. Type inhabitation is undecidable.
 
 Recursive procedure:
 
@@ -365,12 +365,6 @@ def append (α : Type) : list α → list α → list α
 #check append
 #eval append _ [3, 1] [4, 1, 5]
 
-/-! Aliases:
-
-    `[]`          := `nil`
-    `x :: xs`     := `cons x xs`
-    `[x₁, …, xN]` := `x₁ :: … :: xN :: []` -/
-
 def append₂ {α : Type} : list α → list α → list α
 | list.nil         ys := ys
 | (list.cons x xs) ys := list.cons x (append₂ xs ys)
@@ -380,6 +374,12 @@ def append₂ {α : Type} : list α → list α → list α
 
 #check @append₂
 #eval @append₂ _ [3, 1] [4, 1, 5]
+
+/-! Aliases:
+
+    `[]`          := `nil`
+    `x :: xs`     := `cons x xs`
+    `[x₁, …, xN]` := `x₁ :: … :: xN :: []` -/
 
 def append₃ {α : Type} : list α → list α → list α
 | []        ys := ys
