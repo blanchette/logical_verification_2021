@@ -90,6 +90,9 @@ This does not include the "Install our Logical Verification Repository" step.
   (or ![(image of icon)](img/extensions-icon.png) in older versions) in the side bar on the left edge of
   the screen (or press <kbd>Shift</kbd><kbd>Ctrl</kbd><kbd>X</kbd>) and search for `leanprover`.
 
+* Select the `lean` extension (unique name `jroesch.lean`). There is also a
+  `lean4` extension, but that one does not work for our course.
+
 * Click "install" (In old versions of VS Code, you might need to click "reload" afterwards)
 
 * Setup the default profile:
@@ -198,6 +201,10 @@ instructions](https://leanprover-community.github.io/install/linux.html) and
 proceed by the instructions "Install our logical verification repository" for
 Debian/Ubunutu above.
 
+Note: You'll need to install the `lean` VSCode extension (unique name
+`jroesch.lean`). There is also a `lean4` extension, but that one does not work
+for this course.
+
 </details>
 
 <details><summary>macOS (Intel Macs)</summary>
@@ -261,7 +268,11 @@ In the meantime, you can try to set up an Intel installation using Rosetta:
 
  * [Install an Intel version of homebrew](https://stackoverflow.com/questions/64882584/how-to-run-the-homebrew-installer-under-rosetta-2-on-m1-macbook).
 
- * Follow [the detailed Lean installation instructions](https://leanprover-community.github.io/install/macos_details.html), ensuring you use the Intel version of homebrew.
+ * Follow [the detailed Lean installation
+   instructions](https://leanprover-community.github.io/install/macos_details.html),
+   ensuring you use the Intel version of homebrew. Note: you'll need to install
+   the `lean` VSCode extension (unique name: `jroesch.lean`). There is also a
+   `lean4` extension, but that one does not work for this course.
 
 * Open a Rosetta terminal.
 
