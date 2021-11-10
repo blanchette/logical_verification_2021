@@ -254,7 +254,7 @@ end rat
 that the denominator is positive and that the numerator and the denominator have
 no common divisors except `1` and `-1`: -/
 
-namespace alternative_1
+namespace alternative
 
 def rat.is_canonical (a : fraction) : Prop :=
 fraction.denom a > 0
@@ -264,7 +264,7 @@ fraction.denom a > 0
 def rat : Type :=
 {a : fraction // rat.is_canonical a}
 
-end alternative_1
+end alternative
 
 /-! This is more or less the `mathlib` definition.
 
@@ -277,48 +277,6 @@ Advantages:
 Disadvantage:
 
 * more complicated function definitions.
-
-**Alternative 2**: Define all elements syntactically, including the desired
-operations: -/
-
-namespace alternative_2
-
-inductive pre_rat : Type
-| zero : pre_rat
-| one  : pre_rat
-| add  : pre_rat → pre_rat → pre_rat
-| sub  : pre_rat → pre_rat → pre_rat
-| mul  : pre_rat → pre_rat → pre_rat
-| div  : pre_rat → pre_rat → pre_rat
-
-/-! Then quotient `pre_rat` to enforce congruence rules and the field axioms: -/
-
-inductive rat.rel : pre_rat → pre_rat → Prop
-| add_congr {a b c d : pre_rat} :
-  rat.rel a b → rat.rel c d →
-  rat.rel (pre_rat.add a c) (pre_rat.add b d)
-| add_assoc {a b c : pre_rat} :
-  rat.rel (pre_rat.add a (pre_rat.add b c))
-    (pre_rat.add (pre_rat.add a b) c)
-| zero_add {a : pre_rat} :
-  rat.rel (pre_rat.add pre_rat.zero a) a
--- etc.
-
-def rat : Type :=
-quot rat.rel
-
-end alternative_2
-
-/-! Advantages:
-
-* no dependency on `ℤ`;
-* easy proofs of the field axioms;
-* general recipe reusable for other algebraic constructions (e.g., free monoids,
-  free groups).
-
-Disadvantage:
-
-* the definition of orders and lemmas about them are more complicated.
 
 
 ### Real Numbers
