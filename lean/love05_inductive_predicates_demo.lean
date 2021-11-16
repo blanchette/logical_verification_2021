@@ -151,7 +151,7 @@ sorry
 
 /-! ### A Nonexample
 
-Not all inductive definitions admit a least solution. -/
+Not all inductive definitions are legal. -/
 
 -- fails
 inductive illegal₂ : Prop
