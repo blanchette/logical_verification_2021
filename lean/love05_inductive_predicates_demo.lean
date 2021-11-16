@@ -124,7 +124,7 @@ lemma no_step_to_0_0 (s : score) :
   ¬ step s (0–0) :=
 begin
   intro h,
-  cases h
+  cases' h
 end
 
 
