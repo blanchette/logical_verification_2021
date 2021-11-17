@@ -106,7 +106,7 @@ inductive step : score → score → Prop
 | srv_40_game  : ∀n, n < 40 → step (40–n) score.game_srv
 | srv_40_adv   : step (40–40) score.adv_srv
 | srv_adv_40   : step score.adv_srv (40–40)
-| srv_adv_game : step score.adv_srv (40–40)
+| srv_adv_game : step score.adv_srv score.game_srv
 | rcv_0_15     : ∀n, step (n–0) (n–15)
 | rcv_15_30    : ∀n, step (n–15) (n–30)
 | rcv_30_40    : ∀n, step (n–30) (n–40)
